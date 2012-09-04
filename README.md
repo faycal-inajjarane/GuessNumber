@@ -1,4 +1,5 @@
 GuessNumber
 ===========
 
-My first Android application (for training)
+My first Android application (for training).
+
