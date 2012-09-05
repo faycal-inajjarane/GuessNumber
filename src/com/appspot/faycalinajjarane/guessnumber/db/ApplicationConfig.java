@@ -19,7 +19,7 @@ public class ApplicationConfig {
 	private boolean firstAppLanch;
 
 	
-	
+	// [start] GetSet
 	public String getLang() {
 		return lang;
 	}
@@ -51,7 +51,6 @@ public class ApplicationConfig {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
-
+	// [end]
 
 }

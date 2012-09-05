@@ -13,12 +13,13 @@ public class ApplicationConstantes {
 	@DatabaseField
 	private String lang;
 	
-	// 1: Easy, 2:Intermediate, 3:Hard
+	// Application Levels: 1-> Easy, 2->Intermediate, 3->Hard
+	// Enum will be more convenient
 	@DatabaseField
 	private int level;
 	
 	
-	
+	// [start] GetSet
 	public String getLang() {
 		return lang;
 	}
@@ -42,5 +43,5 @@ public class ApplicationConstantes {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
+	// [end]
 }

@@ -8,7 +8,6 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "hostory")
 public class History {
 
-	// player score 
 	@DatabaseField
 	private Integer id;
 	
@@ -22,6 +21,7 @@ public class History {
 
 	
 	
+	// [start] GetSet
 	public int getScore() {
 		return score;
 	}
@@ -45,5 +45,5 @@ public class History {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	
+	//[end]
 }
