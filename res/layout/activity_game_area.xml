@@ -143,13 +143,21 @@
                 android:background="@drawable/number_9"
                 android:src="@drawable/number_9" />
 
-            <Button
-                android:id="@+id/btnClear"
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:onClick="fireDeleteLastUserAnswerDigit"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="0.85"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete"
+                android:background="@drawable/delete" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
                 android:onClick="fireClearUserAnswer"
-                android:text="@string/btn_title_clear" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clear"
+                android:src="@drawable/clear" />
 
         </LinearLayout>
 
