@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">GuessNumber</string>
+    <string name="menu_settings">Configurations</string>
+    <string name="title_activity_main">Guess Number</string>
+    <string name="title_activity_game_area">Jouez</string>
+
+
+    <!-- Buttons labels -->
+    <string name="btn_title_start_game">Démarrer le jeu</string>
+    <string name="btn_title_guess">Deviner</string>
+    <string name="btn_title_clear">Effacer</string>
+    <string name="btn_title_bravo">Excellent</string>
+
+    <!-- Menu labels -->
+    <string name="menu_lang">Language</string>
+    	<string name="menu_lang_english">English</string>
+    	<string name="menu_lang_french">Farnçais</string>
+    <string name="menu_level">Niveau</string>
+    	<string name="menu_level_easy">Facile</string>
+    	<string name="menu_level_medium">Intermediaire</string>
+    	<string name="menu_level_hard">Difficile</string>
+
+</resources>

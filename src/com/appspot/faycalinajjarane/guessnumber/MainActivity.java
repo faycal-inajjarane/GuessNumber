@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.appspot.faycalinajjarane.guessnumber.db.DbHelper;
+import com.appspot.faycalinajjarane.guessnumber.statics.ApplicationConstantes;
 import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
 
 
@@ -21,7 +22,12 @@ public class MainActivity extends OrmLiteBaseActivity<DbHelper> {
         Button btnStartGame = (Button) findViewById(R.id.button1);
 
 
+
+
         final Intent intent = new Intent(this, GameArea.class);
+        intent.putExtra(ApplicationConstantes.FLAG_INTENT_EXTCHANGE_GAME_LEVEL, 1);
+
+
         btnStartGame.setOnClickListener(new OnClickListener() {
 
 			@Override

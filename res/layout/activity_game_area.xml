@@ -3,31 +3,156 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:ems="10" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText1"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:text="\???"
+        android:layout_marginTop="46dp"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10" />
+
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnIGuess"
+        android:onClick="fireGuessNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="IGuess" />
+        android:layout_marginTop="25dp"
+        android:text="@string/btn_title_guess" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:tag="0"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_0"
+                android:src="@drawable/number_0" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:tag="1"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_1"
+                android:src="@drawable/number_1" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:tag="2"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_2"
+                android:src="@drawable/number_2" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:tag="3"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_3"
+                android:src="@drawable/number_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:tag="4"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_4"
+                android:src="@drawable/number_4" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:tag="5"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_5"
+                android:src="@drawable/number_5" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:tag="6"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_6"
+                android:src="@drawable/number_6" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:tag="7"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_7"
+                android:src="@drawable/number_7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:tag="8"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_8"
+                android:src="@drawable/number_8" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:tag="9"
+                android:onClick="firePutNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/number_9"
+                android:src="@drawable/number_9" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:onClick="fireClearUserAnswer"
+                android:text="@string/btn_title_clear" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
